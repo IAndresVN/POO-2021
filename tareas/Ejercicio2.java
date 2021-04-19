@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class Ejercicio2{
 
   private static int numin;
-  private static int num1;
+  private static int numf;
+  private static int numw;
   private static int numsup;
 
 
@@ -14,13 +15,21 @@ public class Ejercicio2{
     System.out.println("Escriba el primer número(numero inferior)");
     int numin = leer.nextInt();
     
-    System.out.println("\nEscriba el segundo número");
+    System.out.println("Escriba el segundo número");
     int numsup = leer.nextInt();
-
-    for(numin = numin;numin <= numsup; numin++){
-      if(numin % 2==0){
-        System.out.println(numin);
+    System.out.println("\n");
+    for(numf = numin;numf <= numsup; numf++){
+      if(numf % 2==0){
+        System.out.println(numf);
       }
+    }
+    System.out.println("\n");
+    numw=numin;
+    while(numw <=numsup){
+      if(numw % 2!=0){
+        System.out.println(numw);
+      }
+      numw++;
     }
   }
 }
