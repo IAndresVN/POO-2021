@@ -31,14 +31,12 @@ public class JugarGlobo extends JApplet implements ActionListener {
    miGlobo.cambiarTamaño(10);
    setVisible(true);
    revalidate();
-   repaint();
  }
  if (event.getSource() == reducir){
    setVisible(false);
    miGlobo.cambiarTamaño(-10);
    setVisible(true);
    revalidate();
-   repaint();
  }
  repaint();
  }
